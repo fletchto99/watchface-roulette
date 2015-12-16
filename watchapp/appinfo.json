@@ -1,43 +1,44 @@
 {
-  "uuid": "f158dfcf-7637-43f6-8912-ee29ca52f27e",
-  "shortName": "Watchface Roulette",
-  "longName": "Watchface Roulette",
-  "companyName": "Matt Langlois",
-  "versionCode": 1,
-  "versionLabel": "1.0",
-  "capabilities": [],
-  "watchapp": {
-    "watchface": false
-  },
   "appKeys": {},
+  "capabilities": [],
+  "companyName": "Matt Langlois",
+  "longName": "Watchface Roulette",
   "resources": {
     "media": [
       {
+        "file": "images/menu_icon.png",
         "menuIcon": true,
-        "type": "png",
         "name": "IMAGE_MENU_ICON",
-        "file": "images/menu_icon.png"
+        "type": "bitmap"
       },
       {
-        "type": "png",
+        "file": "images/logo_splash.png",
         "name": "IMAGE_LOGO_SPLASH",
-        "file": "images/logo_splash.png"
+        "type": "bitmap"
       },
       {
-        "type": "png",
+        "file": "images/tile_splash.png",
         "name": "IMAGE_TILE_SPLASH",
-        "file": "images/tile_splash.png"
+        "type": "bitmap"
       },
       {
-        "type": "font",
+        "file": "fonts/UbuntuMono-Regular.ttf",
         "name": "MONO_FONT_14",
-        "file": "fonts/UbuntuMono-Regular.ttf"
+        "type": "font"
       }
     ]
   },
+  "sdkVersion": "3",
+  "shortName": "Watchface Roulette",
   "targetPlatforms": [
+    "aplite",
     "basalt",
     "chalk"
   ],
-  "sdkVersion": "3"
+  "uuid": "f158dfcf-7637-43f6-8912-ee29ca52f27e",
+  "versionLabel": "1.01",
+  "watchapp": {
+    "hiddenApp": true,
+    "watchface": false
+  }
 }

@@ -26,6 +26,8 @@ if (numWakeups <= 1) {
             console.log('Wakeup set! Event ID: ' + e.id);
         }
     });
+} else {
+    console.log('wakeup already scheduled');
 }
 
 //Determine how many watchfaces are avaliable to install from
@@ -41,6 +43,7 @@ ajax({
 }, function (data) {
     //select a random watchface to install
     findRandomWatchface(data);
+    console.log('hi');
 }, function () {
     card.title('Error');
     card.body('This is odd, we couldn\'t connect to the appstore!');
