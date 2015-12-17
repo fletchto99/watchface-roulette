@@ -43,7 +43,7 @@ ajax({
 }, function (data) {
     //select a random watchface to install
     findRandomWatchface(data);
-    console.log('hi');
+    console.log('Searching for watchface');
 }, function () {
     card.title('Error');
     card.body('This is odd, we couldn\'t connect to the appstore!');
@@ -55,7 +55,7 @@ ajax({
 function findRandomWatchface(data) {
     var offset = getRandomInt(0, data.max);
     //Useful if an offset ever fails
-    console.log('Using offsed: ' + offset);
+    console.log('Using offset: ' + offset);
     ajax({
         url: 'https://fletchto99.com/other/pebble/appstore/web/api.php',
         type: 'json',
